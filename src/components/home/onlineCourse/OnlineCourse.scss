@@ -1,0 +1,89 @@
+@import "./../../../App.scss";
+
+.OcourseContainer{
+  width: 100%;
+//   height: 100vh;
+  padding: 30px 100px;
+
+  @include mobile{
+    padding: 30px 30px;
+}
+  .OcourseTitle{
+    text-align: center;
+    margin-bottom: 50px;
+    @include tablet{
+        margin-bottom: 30px;
+    }
+    h3{
+        color: #1eb2a6;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: 500;
+        @include tablet{
+            font-size: 30px;
+        }
+    }
+  }
+  .Ocourses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .Ocourse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 250px;
+        background: white;
+        padding: 30px 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transition: 0.5s;
+
+            .OcourseIcon{
+                position: relative;
+                img{
+                    width: 80px;
+                    
+                }
+                .hover{
+                    display: none;
+                    position: absolute;
+                    top: 0px;
+                }
+                 
+                
+            }
+           .OcourseName{
+                font-size: 20px;
+                font-weight: 500;
+                margin: 20px 0;
+                text-align: center;
+            }
+            .totalCourses{
+                background: #f8f8f8;;
+                color: #1eb2a6;
+                padding: 10px;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 15px;
+
+            }
+
+       }
+       .Ocourse:hover{
+        background: #1eb2a6;
+        color: white;
+    }
+    .Ocourse:hover .hover{
+        display: block;
+       
+    }
+
+}
+  }

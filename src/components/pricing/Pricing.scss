@@ -1,0 +1,72 @@
+@import "./../../App.scss";
+.pricingContainer{
+ width: 100%;
+.faqContainer{
+  width: 100%;
+  padding: 30px 150px;
+  @include tablet{
+    padding: 30px 30px;
+  }
+  .faqTitle{
+    text-align: center;
+    margin-bottom: 70px;
+    @include tablet{
+        margin-bottom: 30px;
+      }
+      @include mobile{
+        margin-bottom: 15px;
+      }
+    h3{
+        color: #1eb2a6;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: bold;
+        @include mobile{
+           font-size: 30px;
+          }
+    }
+  }
+  .faqs{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+
+    .faq{
+        width: 100%;
+
+        .faqBtn{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            h2{
+                font-weight: normal;
+                @include mobile{
+                    font-size: 15px;
+                    text-align: left;
+                  }
+            }
+            span{
+                display: block;
+                @include mobile{
+                    align-self: center;
+                  }
+            }
+        }
+        .faqBtn:hover{
+            background: #1eb2a6;
+            color: white;
+        }
+       
+        .text{
+            padding: 20px 20px;
+            line-height: 25px;
+            background: #f0eeee;
+            font-size: 20px;
+        }
+    }
+  }
+}}

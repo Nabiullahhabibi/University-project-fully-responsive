@@ -1,0 +1,156 @@
+@import "./../../../App.scss";
+/* head */
+
+
+.headerContainer {
+    position: absolute;
+    top: 0px;
+    z-index: 22;
+    width: 100%;
+
+    .head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px;
+        color: white;
+        // background: #34acc1;
+
+        @include tablet {
+            padding: 20px 50px
+        }
+
+        @include mobile {
+            padding: 20px 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .logo h1 {
+            font-size: 40px;
+
+            @include mobile {
+                text-align: center;
+            }
+        }
+
+        .social {
+            align-self: center;
+
+            .icon {
+                margin-left: 20px;
+                margin-bottom: 10px;
+
+                @include mobile {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+
+    // header//
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 30px;
+
+        @include laptop {
+            margin: auto;
+        }
+
+        .links {
+            @include tablet {
+                display: none;
+            }
+
+            li {
+                @include laptop {
+                    margin-left: 20px;
+                }
+
+            }
+
+        }
+
+        .start {
+            background-color: #1eb2a6;
+            padding: 30px 70px;
+            color: #fff;
+            clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+
+            @include laptop {
+                padding: 25px 30px;
+            }
+
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+
+    .mobileHeader {
+        display: none;
+
+        @include tablet {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #1eb2a6;
+            color: #fff;
+
+            @include tablet {
+                padding: 5px 30px;
+            }
+        }
+
+        .mStart {
+            .getBtn {
+                font-size: 5vw;
+            }
+
+        }
+
+        .toggle {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: vw;
+
+        }
+
+    }
+
+    .mLinks {
+        display: none;
+
+        @include tablet {
+            display: block;
+            background-color: #1eb2a6;
+            color: #fff;
+            width: 100%;
+        }
+
+        ul {
+            padding: 5px 0 30px 0;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                margin-top: 10px;
+            }
+
+            li:hover {
+                color: #278e63;
+            }
+        }
+    }
+
+}

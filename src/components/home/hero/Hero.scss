@@ -1,0 +1,102 @@
+@import "./../../../App.scss";
+
+// .heroSection{
+//   width: 100%;
+//   height: 700px;
+.hero{
+  background-image: url(./../../../../public/images/bg.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  @include tablet{
+    background-position: right;
+    margin-bottom: 20px;
+  }
+
+   .info{
+     position: absolute;
+     top: 220px;
+     padding: 0px 80px;
+     color: white;
+     @include mobile{
+      padding: 0 20px; 
+      top: 250px;
+    
+}
+    .detail{
+
+        h3{
+         font-size: 25px;
+        
+        @include tablet{
+            font-size: 18px;
+      }
+    }
+        
+        
+        .title{
+           width: 70%;
+            h1{
+                font-size: 50px;
+                font-weight: bold;
+                margin: 10px 0;
+                @include tablet{
+                    font-size: 35px;
+                    line-height: 35px;
+    
+              }
+            }
+        
+        span{
+        font-size: 20px;
+        line-height: 35px;
+        @include tablet{
+          font-size: 16px;  
+          line-height: 10px;
+  
+    }
+        }
+       
+        
+        }
+
+    }
+
+    .buttons{
+      display: flex;
+      width: 100%;
+      margin: 25px 0;
+      @include tablet{
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 15px 0;
+
+        
+  }
+      @include mobile{
+        button{
+          height: 50px;
+          font-weight: normal;
+          font-size: 10px;
+          padding: 5px 15px;
+        }
+      }
+      .primaryBtn {
+        background-color: #1eb2a6;
+        color: #fff;
+        margin-right: 15px;
+        @include tablet{
+          margin-bottom: 10px;
+    }
+    
+      }
+      i{
+        margin-left: 10px;
+      }
+    }
+}
+}
+
